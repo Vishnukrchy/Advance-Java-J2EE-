@@ -1,0 +1,32 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>Student_register.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- configuration for register -->
+	<servlet>
+		<servlet-class>com.jsp.servlet_simple_opreration.controller.Student_resigter_controller</servlet-class>
+		<servlet-name>register</servlet-name>
+	</servlet>
+	<!--MAPPING -->
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/submit</url-pattern>
+	</servlet-mapping>
+
+	<!--configuration For Log in -->
+	<servlet>
+		<servlet-class>com.jsp.servlet_simple_opreration.controller.LoginStudentController</servlet-class>
+		<servlet-name>Login</servlet-name>
+	</servlet>
+	<!--MAPPING -->
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/loginStudent</url-pattern>
+	</servlet-mapping>
+
+</web-app>
